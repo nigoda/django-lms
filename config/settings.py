@@ -121,12 +121,12 @@ ASGI_APPLICATION = "config.asgi.application"
 # so consider using postgresql instead
 DATABASES = {
     "default": {
-        "ENGINE": config("DB_ENGINE", default="django.db.backends.postgresql_psycopg2"),
-        "NAME": config("DB_NAME"),
-        "USER": config("DB_USER"),
-        "PASSWORD": config("DB_PASSWORD"),
-        "HOST": config("DB_HOST", default="localhost"),
-        "PORT": config("DB_PORT", default=5432),
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "uOhFHfXZgyCQyYdNQyRtmVoBYHquSBWT",
+        "HOST": "monorail.proxy.rlwy.net",
+        "PORT": "50886",
     }
 }
 
